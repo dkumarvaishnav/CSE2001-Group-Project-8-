@@ -1,0 +1,2 @@
+This is a sample file to check the working of GitHub.
+This file was added by Adarsh.
