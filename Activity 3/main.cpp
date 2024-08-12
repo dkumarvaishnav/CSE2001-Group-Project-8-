@@ -46,3 +46,19 @@ public:
         cout << endl;
     }
 };
+int main(){
+    Vector<int>intVec({10,20,5,40,30});
+    cout<<"Vector elements: ";
+    intVec.display();
+    try{
+        cout<<"Smallest element: "<<intVec.findSmallest()<<endl;
+        cout<<"Search for 20: "<< (intVec.searchElement(20) ? "Found" : "Not Found") << endl;
+        cout<<"Search for 100: "<< (intVec.searchElement(100) ? "Found" : "Not Found") << endl;
+        cout << "Average of elements: " << intVec.calculateAverage() << endl;
+        } catch (const runtime_error& e) {
+            cerr << "Error: " << e.what() << endl;
+        }
+        return 0;
+
+
+}
