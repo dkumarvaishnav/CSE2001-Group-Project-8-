@@ -76,3 +76,40 @@ public:
         }
         return result;
     }
+
+    // Provide the necessary function to use the statement like days=dt;
+    operator int() const {
+        int daysElapsed = 0;
+        for (int m = 1; m < month; ++m) {
+            daysElapsed += Date(1, m, year).daysInMonth();
+        }
+        daysElapsed += day;
+        return daysElapsed;
+    }
+
+    // Friend function to overload << operator for output
+    friend ostream& operator<<(ostream& os, const Date& dt) {
+        os << dt.day << "/" << dt.month << "/" << dt.year;
+        return os;
+    }
+};
+
+int main() {
+    Date dt1(15, 8, 2023);
+    Date dt2(20, 12, 2023);
+
+    if (dt1 < dt2) {
+        cout << dt1 << " is earlier than " << dt2 << endl;
+    }
+
+    ++dt1; 
+    cout << "Incremented date: " << dt1 << endl;
+
+    Date dt3 = dt1 + 5; 
+    cout << "Date after adding 5 days: " << dt3 << endl;
+
+    int daysElapsed = dt1; 
+    cout << "Days elapsed in the current year: " << daysElapsed << endl;
+
+    return 0;
+}
