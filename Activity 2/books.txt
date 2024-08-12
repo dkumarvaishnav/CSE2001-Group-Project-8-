@@ -1,0 +1,8 @@
+101 J.K. Rowling 29.99 320 Bloomsbury 1997
+102 George Orwell 12.50 250 Penguin Books 1949
+103 Jane Austen 15.00 432 Penguin Classics 1813
+104 Harper Lee 18.95 281 J. B. Lippincott & Co. 1960
+105 F. Scott Fitzgerald 10.00 180 Scribner 1925
+106 Gabriel Garcia Marquez 22.00 417 Harper Perennial 1967
+107 Leo Tolstoy 25.00 1225 Penguin Classics 1869
+108 Charles Dickens 14.99 784 Penguin Classics 1859
