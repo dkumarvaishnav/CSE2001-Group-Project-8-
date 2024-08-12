@@ -1,0 +1,6 @@
+PS D:\adarsh\study material\SEMESTER 3\OOPS IN C++\CSE2001-Group-Project-8-> cd "d:\adarsh\study material\SEMESTER 3\OOPS IN C++\CSE2001-Group-Project-8-\Activity 4\" ; if ($?) { g++ main1.cpp -o main1 } ; if ($?) { .\main1 }
+
+Largest integer: 25
+Largest double: 3.14
+Largest string: cherry
+PS D:\adarsh\study material\SEMESTER 3\OOPS IN C++\CSE2001-Group-Project-8-\Activity 4> 
