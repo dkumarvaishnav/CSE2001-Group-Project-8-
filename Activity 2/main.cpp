@@ -44,3 +44,20 @@ int main() {
         books.push_back(tempBook);
     }
 
+    // Sort the books based on author_name
+    sort(books.begin(), books.end(), compareBooks);
+
+    // Write sorted book details to the output file
+    for (const Book& book : books) {
+        outputFile << book.book_id << " " << book.author_name << " " 
+                   << book.price << " " << book.no_of_pages << " " 
+                   << book.publisher << " " << book.year_of_publishing << endl;
+    }
+
+    inputFile.close();
+    outputFile.close();
+
+    cout << "Books sorted successfully!" << endl;
+
+    return 0;
+}
