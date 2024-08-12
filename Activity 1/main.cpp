@@ -53,3 +53,26 @@ public:
         return !(*this == other);
     }
 
+
+    // Overload ++ operator to increment a date by one day
+    Date& operator++() {
+        day++;
+        if (day > daysInMonth()) {
+            day = 1;
+            month++;
+            if (month > 12) {
+                month = 1;
+                year++;
+            }
+        }
+        return *this;
+    }
+
+    // Overload + to add given number of days to find the next date
+    Date operator+(int daysToAdd) const {
+        Date result = *this;
+        for (int i = 0; i < daysToAdd; ++i) {
+            ++result;
+        }
+        return result;
+    }
