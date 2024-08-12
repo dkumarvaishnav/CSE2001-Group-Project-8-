@@ -13,4 +13,4 @@ T findLargest(T a, T b, T c) {
     }
 
     return largest;
-};
+}
