@@ -20,3 +20,27 @@ struct Book {
 bool compareBooks(const Book& book1, const Book& book2) {
     return book1.author_name < book2.author_name;
 }
+
+int main() {
+    ifstream inputFile("books.txt"); // Replace "books.txt" with your actual file name
+    ofstream outputFile("sorted_books.txt");
+
+    if (!inputFile.is_open()) {
+        cerr << "Error opening input file!" << endl;
+        return 1;
+    }
+
+    if (!outputFile.is_open()) {
+        cerr << "Error opening output file!" << endl;
+        return 1;
+    }
+
+    vector<Book> books;
+    Book tempBook;
+
+    // Read book details from the input file
+    while (inputFile >> tempBook.book_id >> tempBook.author_name >> tempBook.price >> 
+           tempBook.no_of_pages >> tempBook.publisher >> tempBook.year_of_publishing) {
+        books.push_back(tempBook);
+    }
+
