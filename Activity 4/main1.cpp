@@ -13,7 +13,7 @@ T findLargest(T a, T b, T c) {
     }
 
     return largest;
-};
+}
 
 int main() {
     int x = 10, y = 25, z = 5;
