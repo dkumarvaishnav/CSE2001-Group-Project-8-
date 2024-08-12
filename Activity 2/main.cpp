@@ -6,7 +6,6 @@
 
 using namespace std;
 
-// Structure to store book details
 struct Book {
     int book_id;
     string author_name;
@@ -16,13 +15,12 @@ struct Book {
     int year_of_publishing;
 };
 
-// Custom comparison function for sorting based on author_name
 bool compareBooks(const Book& book1, const Book& book2) {
     return book1.author_name < book2.author_name;
 }
 
 int main() {
-    ifstream inputFile("books.txt"); // Replace "books.txt" with your actual file name
+    ifstream inputFile("books.txt"); 
     ofstream outputFile("sorted_books.txt");
 
     if (!inputFile.is_open()) {
@@ -38,16 +36,13 @@ int main() {
     vector<Book> books;
     Book tempBook;
 
-    // Read book details from the input file
     while (inputFile >> tempBook.book_id >> tempBook.author_name >> tempBook.price >> 
            tempBook.no_of_pages >> tempBook.publisher >> tempBook.year_of_publishing) {
         books.push_back(tempBook);
     }
 
-    // Sort the books based on author_name
     sort(books.begin(), books.end(), compareBooks);
 
-    // Write sorted book details to the output file
     for (const Book& book : books) {
         outputFile << book.book_id << " " << book.author_name << " " 
                    << book.price << " " << book.no_of_pages << " " 
