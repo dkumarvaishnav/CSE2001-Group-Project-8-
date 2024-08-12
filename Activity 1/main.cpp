@@ -7,12 +7,10 @@ private:
     int month;
     int year;
 
-    // Helper function to check if a year is a leap year
     bool isLeapYear() const {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
 
-    // Helper function to get the number of days in a month
     int daysInMonth() const {
         int days[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         if (month == 2 && isLeapYear()) {
@@ -21,3 +19,37 @@ private:
             return days[month - 1];
         }
     }
+
+public:
+    Date(int d, int m, int y) : day(d), month(m), year(y) {}
+
+    bool operator<(const Date& other) const {
+        if (year != other.year) {
+            return year < other.year;
+        } else if (month != other.month) {
+            return month < other.month;
+        } else {
+            return day < other.day;
+        }
+    }
+
+    bool operator<=(const Date& other) const {
+        return (*this < other) || (*this == other);
+    }
+
+    bool operator>(const Date& other) const {
+        return !(*this <= other);
+    }
+
+    bool operator>=(const Date& other) const {
+        return !(*this < other);
+    }
+
+    bool operator==(const Date& other) const {
+        return (year == other.year) && (month == other.month) && (day == other.day);
+    }
+
+    bool operator!=(const Date& other) const {
+        return !(*this == other);
+    }
+
