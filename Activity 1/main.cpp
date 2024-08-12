@@ -19,3 +19,37 @@ private:
             return days[month - 1];
         }
     }
+
+public:
+    Date(int d, int m, int y) : day(d), month(m), year(y) {}
+
+    bool operator<(const Date& other) const {
+        if (year != other.year) {
+            return year < other.year;
+        } else if (month != other.month) {
+            return month < other.month;
+        } else {
+            return day < other.day;
+        }
+    }
+
+    bool operator<=(const Date& other) const {
+        return (*this < other) || (*this == other);
+    }
+
+    bool operator>(const Date& other) const {
+        return !(*this <= other);
+    }
+
+    bool operator>=(const Date& other) const {
+        return !(*this < other);
+    }
+
+    bool operator==(const Date& other) const {
+        return (year == other.year) && (month == other.month) && (day == other.day);
+    }
+
+    bool operator!=(const Date& other) const {
+        return !(*this == other);
+    }
+
