@@ -20,8 +20,7 @@ public:
         if (elements.empty()) {
             throw runtime_error("Vector is empty.");
         }
-        T min_element = *min_element(elements.begin(), elements.end());
-        return min_element;
+        return *min_element(elements.begin(), elements.end());
     }
 
     
@@ -47,7 +46,8 @@ public:
     }
 };
 int main(){
-    Vector<int>intVec({10,20,5,40,30});
+    Vector<int> intVec({10,20,5,40,30});
+
     cout<<"Vector elements: ";
     intVec.display();
     try{
@@ -55,10 +55,8 @@ int main(){
         cout<<"Search for 20: "<< (intVec.searchElement(20) ? "Found" : "Not Found") << endl;
         cout<<"Search for 100: "<< (intVec.searchElement(100) ? "Found" : "Not Found") << endl;
         cout << "Average of elements: " << intVec.calculateAverage() << endl;
-        } catch (const runtime_error& e) {
-            cerr << "Error: " << e.what() << endl;
-        }
-        return 0;
-
-
+    } catch (const runtime_error& e) {
+        cerr << "Error: " << e.what() << endl;
+    }
+    return 0;
 }

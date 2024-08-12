@@ -1,0 +1,8 @@
+PS C:\gitcppwork\CSE2001-Group-Project-8-\Activity 3> cd "c:\gitcppwork\CSE2001-Group-Project-8-\Activity 3\" ; if ($?) { g++ main.cpp -o main } ; if ($?) { .\main }
+
+Vector elements: 10 20 5 40 30
+Smallest element: 5
+Search for 20: Found
+Search for 100: Not Found
+Average of elements: 21
+PS C:\gitcppwork\CSE2001-Group-Project-8-\Activity 3>
