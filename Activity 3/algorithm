@@ -1,0 +1,18 @@
+EXPERIMENT NO. --> 8
+
+ALGORITHM
+
+1. Create a custom Vector class that wraps a std::vector and provides additional functionality.
+2. Initialize the Vector class with a vector of elements.
+3. Implement the following methods:
+      a. findSmallest: Find the smallest element in the vector using std::min_element.
+      b. searchElement: Search for a specific element in the vector using std::find.
+      c. calculateAverage: Calculate the average of the elements in the vector using std::accumulate.
+      d. display: Display the elements of the vector.
+4. In main, create an instance of the Vector class with a vector of integers.
+5. Call the methods to:
+      a. Display the vector elements.
+      b. Find the smallest element.
+      c. Search for specific elements (20 and 100).
+      d. Calculate the average of the elements.
+6. Catch and handle any runtime errors that may occur.
