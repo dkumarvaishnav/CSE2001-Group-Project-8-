@@ -1,0 +1,7 @@
+EXPERIMENT NO. --> 7
+
+ALGORITHM 
+
+1. Read a CSV file containing book information into a vector of Book structs.
+2. Sort the vector of books by author name using the std::sort algorithm.
+3. Write the sorted vector of books to a new CSV file.
