@@ -2,29 +2,29 @@ EXPERIMENT NO. --> 6
 
 ALGORITHM 
 
-1. Define the Date Class:
-   - Create a class `Date` with attributes: `day`, `month`, and `year`.
-
-2. Leap Year Check:
-   - Implement `isLeapYear()` to check if the year is a leap year.
-
-3. Days in Month Calculation:
-   - Implement `daysInMonth()` to return the number of days in the current month, accounting for leap years.
-
-4. Overload Relational Operators:
-   - Overload `<`, `<=`, `>`, `>=`, `==`, and `!=` to compare two `Date` objects.
-
-5. Increment Date by One Day:
-   - Overload `++` to increment the date by one day, handling month and year transitions.
-
-6. Add Days to Date:
-   - Overload `+` to add a specified number of days to a date.
-
-7. Convert Date to Days Elapsed:
-   - Implement `operator int()` to convert the date to the number of days elapsed in the current year.
-
-8. Overload Output Operator:
-   - Overload `<<` to print the date in `dd/mm/yyyy` format.
-
-9. Test the Class:
-   - In the `main` function, create and manipulate `Date` objects, testing the overloaded operators and functions.
+         1. Define the Date Class:
+            - Create a class `Date` with attributes: `day`, `month`, and `year`.
+         
+         2. Leap Year Check:
+            - Implement `isLeapYear()` to check if the year is a leap year.
+         
+         3. Days in Month Calculation:
+            - Implement `daysInMonth()` to return the number of days in the current month, accounting for leap years.
+         
+         4. Overload Relational Operators:
+            - Overload `<`, `<=`, `>`, `>=`, `==`, and `!=` to compare two `Date` objects.
+         
+         5. Increment Date by One Day:
+            - Overload `++` to increment the date by one day, handling month and year transitions.
+         
+         6. Add Days to Date:
+            - Overload `+` to add a specified number of days to a date.
+         
+         7. Convert Date to Days Elapsed:
+            - Implement `operator int()` to convert the date to the number of days elapsed in the current year.
+         
+         8. Overload Output Operator:
+            - Overload `<<` to print the date in `dd/mm/yyyy` format.
+         
+         9. Test the Class:
+            - In the `main` function, create and manipulate `Date` objects, testing the overloaded operators and functions.
