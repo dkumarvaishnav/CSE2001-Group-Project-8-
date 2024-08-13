@@ -1,3 +1,5 @@
+EXPERIMENT NO. --> 6
+
 Create a class by name date with the member data day, month and year. Perform the following:
 • Overload all relational operators <, <=, >, >=, ==, !=
 • Overload ++ operator to increment a date by one day
