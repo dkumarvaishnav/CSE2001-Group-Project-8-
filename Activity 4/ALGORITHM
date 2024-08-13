@@ -1,0 +1,10 @@
+EXPERIMENT NO. --> 9
+
+ALGORITHM
+
+
+      1. Define a template function findLargest that takes three arguments of type T.
+      2. Initialize a variable largest with the first argument a.
+      3. Compare the second argument b with largest and update largest if b is greater.
+      4. Compare the third argument c with largest and update largest if c is greater.
+      5. Return the largest value.
